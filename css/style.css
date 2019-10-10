@@ -56,11 +56,17 @@ header a:hover {
 }
 .menu {
     grid-row: 3/4;
-    grid-column: 2/3;
+    grid-column: 1/2;
 }
 .reservation {
     grid-row: 2/3;
-    grid-column: 5/6;
+    grid-column: 1/2;
+}
+.welcome {
+    grid-row: 3/4;
+    grid-column: 2/6;
+    color: black;
+    font-size: 60px;
 }
 
 .small-img{
