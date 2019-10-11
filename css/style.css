@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     color: #fff;
+    font-family: "Mansalva";
 
 }
 /* header*/
@@ -74,12 +75,32 @@ header a:hover {
 }
 .small-img:hover {
     width: 250px;
-    border: 5px solid grey;
 }
 /*footer*/
 footer {
     background-color: #5D5C61;
-    height: 400px;
+    padding: 150px 200px;
+    font-size: 1.5rem;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+
+}
+footer ul {
+    padding-top: 20px;
+    list-style: none;
+}
+.hours {
+    width: 33%;
+}
+.social-media {
+    width: 33%;
+
+}
+.visit-us {
+    width: 33%;
 }
 /*menu*/
 .menu-container,
@@ -89,6 +110,7 @@ footer {
     position: relative;
     top: 100px;
 }
+
 table {
     width: 60%;
     margin: 0 auto;
@@ -102,3 +124,33 @@ td {
     border: 1px solid #fff;
     padding: 20px;
 }
+.address-container {
+    padding-top: 150px;
+    display: flex;
+    justify-content: center;
+    background-color: #B098A4;
+}
+.form-container {
+    background-color: #B098A4;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+.form-container input {
+    width: 300px;
+    height:50px;
+    font-size: 2rem;
+    color: black;
+    
+}
+.form-row {
+    padding-bottom: 10px;
+}
+button {
+    color: black;
+    width: 100px;
+    height: 50px;
+}
+
+
