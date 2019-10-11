@@ -79,7 +79,7 @@ header a:hover {
 /*footer*/
 footer {
     background-color: #5D5C61;
-    padding: 150px 200px;
+    padding: 150px 10%;
     font-size: 1.5rem;
 }
 .footer-container{
@@ -92,16 +92,7 @@ footer ul {
     padding-top: 20px;
     list-style: none;
 }
-.hours {
-    width: 33%;
-}
-.social-media {
-    width: 33%;
 
-}
-.visit-us {
-    width: 33%;
-}
 /*menu*/
 .menu-container,
 .reservations-container {
@@ -152,5 +143,33 @@ button {
     width: 100px;
     height: 50px;
 }
+/*media*/
+@media only screen and (max-width: 700px) {
+    header li {
+        display: none;
+    }
+    .welcome {
+        font-size:1rem;
+    }
+    .footer-container {
+        flex-wrap: wrap;
+        font-size: 1rem;
+    }
+    .hours {
+     width: 100%;   
+    }
+  }
+  @media only screen and (max-width: 1000px) {
+    header li {
+        font-size: 1rem;;
+    }
+    .welcome {
+        font-size:1.5rem;
+    }
+    .footer-container {
+        flex-wrap: wrap;
+    }
+
+  }
 
 
