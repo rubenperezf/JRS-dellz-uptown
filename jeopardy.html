@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
-    <title>Dellz Uptown</title>
+    <title>Play Jeopardy With us</title>
 </head>
 <body>
     <header>
@@ -19,34 +18,39 @@
                 <li><a href="jeopardy.html">Jeopardy</a></li>
             </ul>
     </header>
-    <section class="grid-container">
-        <div class="menu">
-            <a href="menu.html"><img class="small-img" src="images/menu2.png" alt="menu"/></a>
-        </div>
-        <div class="reservation">
-            <a href="reservations.html"><img class="small-img" src="images/reservations2.png" alt="reservation"/></a>
-        </div>
-        <div class="welcome">
-            <h1>Welcome to Dell'z Uptown</h1>
-        </div>
+    <section class="jeopardy">
+        <p>Each time that you click the bottom, you have a new Question</p>
+        <p>Bring the answers to Dellz and partipate in a free Pizza contest!</p>
+        <button onclick="getRequest('http://jservice.io/api/random')">Jeopardy Question</button>
+        <script>
+            function getRequest(url) {
+                $.getJSON(url, function (result) {
+                    for(let i = 0; i < result.length; i++){
+                        console.log(result[i].question);
+                        document.getElementById('doc-text').innerHTML += result[i].question + '<br/>';
+                    }
+                });
+            }
+            getRequest(url);
+        </script>
+     ​
+        <div id="doc-text">
         
     </section>
-    <section>
 
-    </section>
     <footer>
             <div class="footer-container">
                 <div class="hours">
                     <h2 class="h2-footer">Hours</h2>
                     <ul>
-                        <li>Monday: 11:00 - 20:00</li>
-                        <li>Tuesday: 11:00 - 20:00</li>
-                        <li>Wednesday: 11:00 - 20:00</li>
-                        <li>Thurdsday: 11:00 - 20:00</li>
-                        <li>Friday: 11:00 - 20:00</li>
-                        <li>Saturday: 8:00 - 20:00</li>
-                        <li>Sunday: 8:00 - 15:00</li>
-    
+                            <li>Monday: 11:00 - 20:00</li>
+                            <li>Tuesday: 11:00 - 20:00</li>
+                            <li>Wednesday: 11:00 - 20:00</li>
+                            <li>Thurdsday: 11:00 - 20:00</li>
+                            <li>Friday: 11:00 - 20:00</li>
+                            <li>Saturday: 8:00 - 20:00</li>
+                            <li>Sunday: 8:00 - 15:00</li>
+        
                     </ul>
     
                 </div>
@@ -54,8 +58,8 @@
                 <div class="social-media">
                     <h2 class="h2-footer">Lets Conect</h2>
                     <ul>
-                       <li><a href="https://www.facebook.com/dellzuptown/">Facebook</a></li>
-                       <li><a href="https://www.instagram.com/eatdellz/">Instagram</a></li>
+                        <li><a href="https://www.facebook.com/dellzuptown/">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/eatdellz/">Instagram</a></li>
                     </ul>
     
                 </div>
@@ -72,6 +76,6 @@
     
         </footer>
 
-    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </body>
 </html>
