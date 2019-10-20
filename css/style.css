@@ -109,15 +109,26 @@ footer a:hover{
     position: relative;
     top: 100px;
 }
-.menu-container {
-    height: 800px;
-
+.pdf {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 30px;
+    text-decoration: none;
+    margin-top: 50px;
+    margin-right: 50px;
 }
+.pdf:hover {
+    color: #553D67;
+}
+.menu-container {
+    height: 600px;
+}
+
 table {
     width: 60%;
     margin: 0 auto;
     position: relative;
-    top: 100px;
+    top: 50px;
     font-size: 2rem;
 }
 caption, 
